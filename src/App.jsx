@@ -3,6 +3,7 @@ import Features from "./components/Features";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 
 function App() {
   const targetRef = useRef();
@@ -15,12 +16,7 @@ function App() {
         <div>
           <Features targetRef={targetRef} />
           <Testimonials />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non rem
-            totam laborum exercitationem similique tempore porro? Nobis non
-            incidunt officia ullam laborum ipsum? Id suscipit pariatur animi,
-            perspiciatis in cumque!
-          </p>
+          <Footer />
         </div>
       </main>
     </>
