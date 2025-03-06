@@ -4,9 +4,9 @@ import privacyImage from "../assets/compliant.png";
 import starImage from "../assets/star.png";
 import callImage from "../assets/video-call.png";
 
-export default function Features() {
+export default function Features({ targetRef }) {
   return (
-    <section className="px-20 py-20">
+    <section ref={targetRef} className="px-20 py-20">
       <div className="flex flex-col gap-4 items-center text-center mb-15">
         <h3 className="text-4xl font-black">Main Features</h3>
         <p className="px-70">
