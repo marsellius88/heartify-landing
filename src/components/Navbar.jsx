@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+const navbarItems = ["Home", "Features", "About", "Contact"];
+
 export default function Navbar({ targetRef }) {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -26,29 +28,17 @@ export default function Navbar({ targetRef }) {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between text-white">
-        <h1 className="text-2xl font-bold">Heartify</h1>
-
+        <h1 className="text-2xl font-bold">
+          <a href="#">Heartify</a>
+        </h1>
         <ul className="hidden md:flex space-x-6 text-lg">
-          <li>
-            <a href="#home" className="hover:text-gray-300">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#features" className="hover:text-gray-300">
-              Features
-            </a>
-          </li>
-          <li>
-            <a href="#about" className="hover:text-gray-300">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#contact" className="hover:text-gray-300">
-              Contact
-            </a>
-          </li>
+          {navbarItems.map((item, index) => (
+            <li key={`navbar-${index}`}>
+              <a href="#" className="hover:text-[#d01760] hover:underline">
+                {item}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>

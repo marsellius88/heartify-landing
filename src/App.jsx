@@ -3,6 +3,7 @@ import Features from "./components/Features";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Testimonials from "./components/Testimonials";
+import HowItWorks from "./components/HowItWorks";
 import Footer from "./components/Footer";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <div>
           <Features targetRef={targetRef} />
           <Testimonials />
+          <HowItWorks />
           <Footer />
         </div>
       </main>
