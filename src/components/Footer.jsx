@@ -16,11 +16,11 @@ export default function Footer() {
           <div className="col-span-2">
             <p className="text-lg font-bold pb-4">About</p>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non rem
-              totam laborum exercitationem similique tempore porro? Nobis non
-              incidunt officia ullam laborum ipsum? Id suscipit pariatur animi,
-              perspiciatis in cumque. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit.
+              Finding love should be simple, fun, and meaningful. Heartify
+              connects people through smart matching technology, helping you
+              meet like-minded individuals effortlessly. Whether you're looking
+              for deep connections or exciting new friendships, we make every
+              swipe count. Join us and discover endless possibilities in love!
             </p>
           </div>
           <div>
@@ -74,7 +74,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="flex justify-between pt-5 pb-1">
+      <div className="flex flex-col lg:flex-row items-center lg:justify-between pt-5 pb-5 lg:pb-1">
         <ul className="flex space-x-5">
           <li>
             <a href="#" className="hover:text-[#d01760]">
@@ -92,7 +92,7 @@ export default function Footer() {
             </a>
           </li>
         </ul>
-        <p>© 2025 Heartify, All Rights Reserved.</p>
+        <p className="mt-2 lg:mt-0">© 2025 Heartify, All Rights Reserved.</p>
       </div>
     </footer>
   );

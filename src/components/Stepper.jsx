@@ -13,7 +13,7 @@ const stepsItem = [
 
 export default function Stepper() {
   return (
-    <div className="grid gap-6 mt-16 lg:grid-cols-4">
+    <div className="grid gap-6 mt-16 md:grid-cols-2 lg:grid-cols-4">
       {stepsItem.map((item, index) => (
         <div
           key={`step-${index}`}

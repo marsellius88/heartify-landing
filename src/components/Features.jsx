@@ -14,7 +14,7 @@ export default function Features({ targetRef }) {
         <h2 className="text-5xl font-bold text-center">
           The Future of Dating Starts Here
         </h2>
-        <div className="grid grid-cols-4 mt-16 gap-6">
+        <div className="mt-16 gap-6 grid sm:grid-cols-2 md:grid-cols-4">
           <FeatureItem
             feature={{
               image: matchImage,

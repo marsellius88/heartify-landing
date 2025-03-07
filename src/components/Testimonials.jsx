@@ -3,7 +3,7 @@ import TestimonialItem from "./TestimonialItem";
 export default function Testimonials() {
   return (
     <section className="px-20 py-20 bg-[#d01760]/15">
-      <div className="grid grid-cols-3 gap-6">
+      <div className="gap-6 grid lg:grid-cols-3">
         <TestimonialItem
           testimonial={{
             name: "Jessica & Mark",

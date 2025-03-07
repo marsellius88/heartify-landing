@@ -24,15 +24,15 @@ const pricingItems = [
 export default function Membership() {
   return (
     <section className="px-20 py-20 bg-[#d01760]/15">
-      <div className="grid grid-cols-4 gap-6">
-        <div className="col-span-2 flex flex-col justify-center">
-          <span className="block mb-2 text-xs font-medium tracking-widest text-left uppercase">
+      <div className="gap-6 grid md:grid-cols-2 lg:grid-cols-4">
+        <div className="md:col-span-2 flex flex-col justify-center">
+          <span className="block mb-2 text-xs font-medium tracking-widest text-center lg:text-left uppercase">
             Membership Plans
           </span>
-          <h2 className="text-5xl font-bold text-left mb-8">
+          <h2 className="text-5xl font-bold text-center lg:text-left mb-8">
             Unlock More Possibilities in Love
           </h2>
-          <button className="self-start px-6 py-3 text-xl text-white font-bold bg-[#d01760] rounded-full hover:brightness-85 cursor-pointer">
+          <button className="self-center lg:self-start px-6 py-3 mb-5 lg:mb-0 text-xl text-white font-bold bg-[#d01760] rounded-full hover:brightness-85 cursor-pointer">
             Get Started
           </button>
         </div>
