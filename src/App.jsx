@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Testimonials from "./components/Testimonials";
 import HowItWorks from "./components/HowItWorks";
 import Footer from "./components/Footer";
+import Membership from "./components/Membership";
 
 function App() {
   const targetRef = useRef();
@@ -18,6 +19,7 @@ function App() {
           <Features targetRef={targetRef} />
           <Testimonials />
           <HowItWorks />
+          <Membership />
           <Footer />
         </div>
       </main>
