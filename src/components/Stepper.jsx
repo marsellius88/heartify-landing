@@ -13,16 +13,16 @@ const stepsItem = [
 
 export default function Stepper() {
   return (
-    <div className="grid gap-4 mt-16 lg:grid-cols-4">
+    <div className="grid gap-6 mt-16 lg:grid-cols-4">
       {stepsItem.map((item, index) => (
         <div
           key={`step-${index}`}
-          className="flex flex-col p-8 space-y-4 rounded-md bg-red-100"
+          className="flex flex-col p-8 space-y-4 rounded-md bg-[#d01760]/15 transition-transform duration-200 hover:scale-105"
         >
-          <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-red-300 text-white">
+          <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-[#d01760] text-white">
             {index + 1}
           </div>
-          <p className="text-2xl font-semibold">
+          <p className="text-xl font-semibold">
             <b>{item.title}.</b> {item.body}
           </p>
         </div>
