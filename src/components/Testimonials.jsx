@@ -2,7 +2,7 @@ import TestimonialItem from "./TestimonialItem";
 
 export default function Testimonials() {
   return (
-    <section className="px-20 py-20 bg-[#d01760]/15">
+    <section className="px-4 md:px-20 py-20 bg-[#d01760]/15">
       <div className="gap-6 grid lg:grid-cols-3">
         <TestimonialItem
           testimonial={{

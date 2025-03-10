@@ -23,7 +23,7 @@ const pricingItems = [
 
 export default function Membership() {
   return (
-    <section className="px-20 py-20 bg-[#d01760]/15">
+    <section className="px-4 md:px-20 py-20 bg-[#d01760]/15">
       <div className="gap-6 grid md:grid-cols-2 lg:grid-cols-4">
         <div className="md:col-span-2 flex flex-col justify-center">
           <span className="block mb-2 text-xs font-medium tracking-widest text-center lg:text-left uppercase">
@@ -40,18 +40,18 @@ export default function Membership() {
           <Card key={`pricing-${index}`} effect={true}>
             <div className="mb-6">
               <h3 className="text-2xl font-semibold sm:text-4xl">
-                <a href="#">{item.title}</a>
+                <a className="text-gray-800" href="#">{item.title}</a>
               </h3>
             </div>
             <div className="mb-4 space-x-2">
-              <span className="text-4xl font-bold">${item.price}/mo</span>
+              <span className="text-4xl font-bold text-gray-800">${item.price}/mo</span>
             </div>
             <ul className="mb-6 space-y-2">
               {item.features.map((featureItem) => (
                 <li key={featureItem} className="flex items-center gap-1.5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="flex-shrink-0 w-5 h-5 text-stone-600"
+                    className="flex-shrink-0 w-5 h-5 text-gray-600"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -61,7 +61,7 @@ export default function Membership() {
                       clipRule="evenodd"
                     ></path>
                   </svg>
-                  <span className="text-stone-600">{featureItem}</span>
+                  <span className="text-gray-600">{featureItem}</span>
                 </li>
               ))}
             </ul>

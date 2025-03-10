@@ -17,12 +17,12 @@ export default function Stepper() {
       {stepsItem.map((item, index) => (
         <div
           key={`step-${index}`}
-          className="flex flex-col p-8 space-y-4 rounded-md bg-[#d01760]/15 transition-transform duration-200 hover:scale-105"
+          className="flex flex-col p-8 space-y-4 rounded-md bg-[#d01760]/15 transition-transform duration-200 md:hover:scale-105"
         >
           <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full bg-[#d01760] text-white">
             {index + 1}
           </div>
-          <p className="text-xl font-semibold">
+          <p className="text-xl font-semibold text-gray-800">
             <b>{item.title}.</b> {item.body}
           </p>
         </div>

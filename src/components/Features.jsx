@@ -1,12 +1,12 @@
 import FeatureItem from "./FeatureItem";
-import matchImage from "../assets/puzzle.png";
-import privacyImage from "../assets/compliant.png";
-import starImage from "../assets/star.png";
-import callImage from "../assets/video-call.png";
+import puzzleImage from "../assets/puzzle.png";
+import padlockImage from "../assets/padlock.png";
+import chatImage from "../assets/chat.png";
+import rocketImage from "../assets/rocket.png";
 
 export default function Features({ targetRef }) {
   return (
-    <section ref={targetRef} className="px-20 pt-20 pb-30">
+    <section ref={targetRef} className="px-4 md:px-20 pt-20 pb-30">
       <div className="container mx-auto">
         <span className="block mb-2 text-xs font-medium tracking-widest text-center uppercase">
           Key Features
@@ -17,26 +17,30 @@ export default function Features({ targetRef }) {
         <div className="mt-16 gap-6 grid sm:grid-cols-2 md:grid-cols-4">
           <FeatureItem
             feature={{
-              image: matchImage,
-              body: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+              image: puzzleImage,
+              title: "Smart Matching",
+              body: "Our AI connects you with people who truly match your interests.",
             }}
           />
           <FeatureItem
             feature={{
-              image: privacyImage,
-              body: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+              image: padlockImage,
+              title: "Privacy & Security",
+              body: "Your data is safe with us. Only connect with verified users.",
             }}
           />
           <FeatureItem
             feature={{
-              image: starImage,
-              body: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+              image: chatImage,
+              title: "Fun & Interactive Chat",
+              body: "Text, voice, and video chat to get to know your matches better.",
             }}
           />
           <FeatureItem
             feature={{
-              image: callImage,
-              body: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+              image: rocketImage,
+              title: "Boost Your Profile",
+              body: "Stand out and get more matches with our premium features.",
             }}
           />
         </div>
