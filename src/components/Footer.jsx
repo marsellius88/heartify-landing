@@ -12,8 +12,9 @@ export default function Footer() {
   return (
     <footer className="px-4 md:px-20 pt-20">
       <div className="py-5 border-y-1 border-stone-200">
-        <div className="grid grid-cols-4 gap-10">
-          <div className="col-span-2">
+
+        <div className="grid grid-cols-2 gap-10">
+          <div>
             <p className="text-lg font-bold pb-4 text-gray-800">About</p>
             <p className="text-gray-800">
               Finding love should be simple, fun, and meaningful. Heartify
@@ -23,31 +24,34 @@ export default function Footer() {
               swipe count. Join us and discover endless possibilities in love!
             </p>
           </div>
-          <div>
-            <p className="text-lg font-bold pb-4 text-gray-800">Products</p>
-            <ul>
-              {productItems.map((item, index) => (
-                <li key={`product-${index}`} className="mb-1">
-                  <a href="#" className="hover:text-[#d01760] text-gray-800">
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <p className="text-lg font-bold pb-4 text-gray-800">Contact</p>
-            <ul>
-              {contactItems.map((item, index) => (
-                <li key={`contact-${index}`} className="mb-1">
-                  <a href="#" className="hover:text-[#d01760] text-gray-800">
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
+          <div className="grid md:grid-cols-2 gap-10">
+            <div>
+              <p className="text-lg font-bold pb-4 text-gray-800">Products</p>
+              <ul>
+                {productItems.map((item, index) => (
+                  <li key={`product-${index}`} className="mb-1">
+                    <a href="#" className="hover:text-[#d01760] text-gray-800">
+                      {item}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className="text-lg font-bold pb-4 text-gray-800">Contact</p>
+              <ul>
+                {contactItems.map((item, index) => (
+                  <li key={`contact-${index}`} className="mb-1">
+                    <a href="#" className="hover:text-[#d01760] text-gray-800">
+                      {item}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
+
         <div className="flex flex-row gap-8 items-center pt-8">
           <p className="text-xl font-bold text-gray-800">Download the app!</p>
           <a
@@ -92,7 +96,9 @@ export default function Footer() {
             </a>
           </li>
         </ul>
-        <p className="mt-2 lg:mt-0 text-gray-800">© 2025 Heartify, All Rights Reserved.</p>
+        <p className="mt-2 lg:mt-0 text-gray-800">
+          © 2025 Heartify, All Rights Reserved.
+        </p>
       </div>
     </footer>
   );
