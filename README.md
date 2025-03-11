@@ -1,4 +1,4 @@
-# Heartify - Dating App Landing Page
+# 💖 Heartify - Dating App Landing Page
 
 ![Heartify Landing Page Screenshot](assets/preview-1.jpg)
 
